@@ -3,7 +3,6 @@ public class MainObject {
     public String name;
     public Integer age;
     
-    
     //Constructer
     public MainObject(String name, Integer age){
 		this.name = name;
@@ -16,7 +15,7 @@ public class MainObject {
      * Signature: Print()
 	 * */
     public void Print(){
-    	System.debug('Name is '+name+' and age is '+age);
+        System.debug('Name is '+name+' and age is '+age);
        	return;
     }
 
