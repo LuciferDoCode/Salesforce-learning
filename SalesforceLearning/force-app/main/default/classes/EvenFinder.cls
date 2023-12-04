@@ -25,6 +25,11 @@ public with sharing class EvenFinder {
             return true;
         }else{
             return false;
-        }       
+        }        
     }
 }
+
+
+EvenFinder ef = new EventFinder(6);
+
+EvenFinder ef1 = new EventFinder(5);
