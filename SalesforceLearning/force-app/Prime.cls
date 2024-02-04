@@ -1,25 +1,39 @@
 public with sharing class Prime {
-    public static List<Integer> numm = new List<Integer>{2,4,7,11,23,37,44};
-    public static void findprime(){
-        Integer size=numm.size();
-        Integer numbers=0;
-        for(Integer i=0; i<size; i++){
-            numbers=numm[i];
-            if(numm==1/numm==2){
-                System.debug(numbers+'' is not prime number'');
-            }else{
-                
-            for(Integer j=2; j<size; j++){
-                if(Math.mod(numbers,j)!=0){
-                    System.debug(numbers+''is prime numbers'');
-
-            }
     
+    public static List<Integer> numbers = new List<Integer>{2,4,7,11,22,37,44};
+
+    public static void findprime(){
+    
+        Integer size=numbers.size();
+        Integer num=0;
+        List<Integer> result = new List<Integer>();
+
+        for(Integer i=0; i<size; i++){
+            num=numbers[i];
+            if(num==1 || num==2){
+                result.add(num);
+                continue;
+            }// if end
+
+            Boolean isPrime = true;
+
+            for(Integer j=2; j <= num/2; j++){     // j = 2
+                if(Math.mod(num,j)==0){            // num = 22      
+                    isPrime = false;                // isPrime = false
+                    break;
                 }
-                    
+            }   
+
+            if(isPrime == true) {
+                result.add(num);
             }
-                
-                }
-            }
-        }
+
+            // if(true) {
+            //     result = result.add(num);
+            // }
+
+        }//for loop end
+        System.debug('primes : '+result);
+    }// findprime end
+}//class end
     

@@ -1,4 +1,4 @@
 {
-  "target-dev-hub": "devhub",
-  "target-org": "test"
+  "target-dev-hub": "dhub",
+  "target-org": "sorg"
 }

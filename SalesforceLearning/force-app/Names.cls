@@ -1,16 +1,18 @@
 public with sharing class Names {
-    public static List<string> name = new List<string>{'afia','afreen'};
+    public static List<string> name = new List<string>();
     public static void findnames(){
+        name.add('afia');
+        name.add('afreen');
         Integer size=name.size();
-        string item='a';
         for(Integer i=0; i<size; i++){
-            item=name[i];
+           String item=name[i];
+           system.debug('item is '+item+' at index+' +i);
         }
-        system.debug('item is '+item+' at index+');
+        
     }
     
         
-    }
+ }
 
     
 
