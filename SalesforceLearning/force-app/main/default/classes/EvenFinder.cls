@@ -30,6 +30,6 @@ public with sharing class EvenFinder {
 }
 
 
-EvenFinder ef = new EventFinder(6);
+// EvenFinder ef = new EventFinder(6);
 
-EvenFinder ef1 = new EventFinder(5);
+// EvenFinder ef1 = new EventFinder(5);

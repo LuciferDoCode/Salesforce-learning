@@ -1,7 +1,7 @@
 public with sharing class DataTypes {
     //System Defined
     // Integer, String, Boolean ...
-    public Integer number; // - to + infinity
+    public Integer number1; // - to + infinity
     public Decimal fraction; // floating number
     public Long longRangeNumber; // floating number
     public String text; // '234567890'
@@ -13,7 +13,7 @@ public with sharing class DataTypes {
     List<Object> heterogenous; // SObject
     List<Integer> homogenousNumber;
     List<Integer> homogenousString;
-    List<Sobject> sObject;
+    List<Sobject> sObject1;
     
 
     //User Defined
